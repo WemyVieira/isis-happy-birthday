@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        html, body {
+            height: 100%;
             background-color: #feeff6;
+        }
+        body {
+            margin: 0;
+        }
+        .flex-container {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .row {
+            width: auto;
+        }
+        .flex-item {
+            /* background-color: tomato; */
+            padding: 5px;
+            margin: 10px;
+            line-height: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            text-align: center;
         }
         img {
             max-width: 100%;
@@ -16,6 +45,13 @@
     </style>
 </head>
 <body>
-    <img src="convite.jpg">
+    <div class="flex-container">
+        <div class="row"> 
+            <!-- <div class="flex-item">1</div> -->
+            <img src="convite.jpg" class="flex-item" >
+            
+        </div>
+    </div>
+
 </body>
 </html>
