@@ -88,21 +88,9 @@
   </body>
  
      <script>
-          function hideAddressBar()
-          {
-            if(!window.location.hash)
-            {
-                if(document.height < window.outerHeight)
-                {
-                    document.body.style.height = (window.outerHeight + 50) + 'px';
-                }
-
-                setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
-            }
-          }
-
-          window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
-          window.addEventListener("orientationchange", hideAddressBar );
-         
+          var m = document.createElement('meta'); 
+ m.name = 'theme-color'; 
+ m.content = '#152126'; 
+ document.head.appendChild(m);
     </script>
 </html>
