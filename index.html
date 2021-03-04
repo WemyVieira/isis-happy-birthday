@@ -1,96 +1,25 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width">
-      <meta name="theme-color" content="#feeff6" />
-    <meta name="msapplication-navbutton-color" content="#feeff6">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#feeff6"> 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
-    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-
-    <title>Responsive HTML images demo</title>
-    
-     <style>
-      html {
-        font-family: sans-serif;
-        background-color: #feeff6;
-      }
-
-      body {
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: #feeff6;
-      }
-
-      header {
-        background: url(header.jpg) no-repeat center;
-        height: 200px;
-      }
-
-      section {
-        /* padding: 20px; */
-      }
-
-      p {
-        line-height: 1.5;
-      }
-
-      img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        max-height: 100vh;
-        height: auto;
-      }
-    </style>
-    
- 
-    
-    
-  </head>
-  <body>
-    <!-- <header>
-
-    </header> -->
-
-    <main>
-      <section>
-        <!-- <h1>My website</h1> -->
-
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget venenatis ligula. Ut lacinia at dolor vitae pulvinar. Aliquam pretium dignissim eros. Integer faucibus, dui non aliquet bibendum, lectus orci lobortis odio, ornare porttitor est tellus eget velit. Nulla eros elit, malesuada id neque vel, viverra vehicula neque. Nullam auctor turpis non leo iaculis finibus. Quisque blandit arcu venenatis libero tempor, ac pulvinar ligula dapibus.</p> -->
-
-        <!-- <picture>
-          <source media="(max-width: 799px)" srcset="convite.jpg">
-          <source media="(min-width: 800px)" srcset="convite.jpg">
-          <img src="convite.jpg" alt="Chris standing up holding his daughter Elva">
-        </picture> -->
-
-        <!-- <p>Suspendisse potenti. Ut in luctus eros. Mauris pulvinar vehicula aliquet. Etiam imperdiet eleifend luctus. Duis ut justo nec eros ornare consectetur. Vestibulum convallis condimentum varius. Maecenas rutrum porta varius. Phasellus volutpat sem id sagittis luctus. Morbi vitae quam vitae nisi iaculis dignissim.</p> -->
-
-        <img srcset="convite.jpg 480w,
-                     convite.jpg 800w"
-             sizes="(max-width: 600px) 480px,
-                    800px"
-             src="convite.jpg" alt="Elva dressed as a fairy">
-
-        <!-- <img srcset="elva-fairy-480w.jpg 480w,
-                     elva-fairy-800w.jpg 800w"
-             sizes="(max-width: 600px) 480px,
-                    800px"
-             src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> -->
-
-        <!-- <p>Header image originally by <a href="https://www.flickr.com/photos/miwok/17086751527/">Miwok</a>.</p> -->
-      </section>
-    </main>
-  </body>
- 
-     <script>
-          var m = document.createElement('meta'); 
- m.name = 'theme-color'; 
- m.content = '#152126'; 
- document.head.appendChild(m);
-    </script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="images/hello-icon-152.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="white"/>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Hello World">
+  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+  <div class="container">
+    <h1 class="title">Hello World!</h1>
+	<img src="images/convite.jpg">
+  </div>
+  <script src="js/main.js"></script>
+</body>
 </html>
