@@ -88,30 +88,21 @@
   </body>
  
      <script>
-       document.querySelector("img").addEventListener("click", (event) => {
-          hideBar();
-        }, false);
-       
-       document.addEventListener("DOMContentLoaded", function(event) {
-         
-         
-         
-        //document.querySelector("img").click();
-       });
-      function hideBar(){
-      var doc = window.document;
-      var docEl = doc.documentElement;
+          function hideAddressBar()
+          {
+            if(!window.location.hash)
+            {
+                if(document.height < window.outerHeight)
+                {
+                    document.body.style.height = (window.outerHeight + 50) + 'px';
+                }
 
-      var requestFullScreen = docEl.requestFullscreen() || docEl.mozRequestFullScreen() || docEl.webkitRequestFullScreen() || docEl.msRequestFullscreen();
-      var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+                setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+            }
+          }
 
-      //if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-      //  requestFullScreen.call(docEl);
-      //}
-      //else {
-      //  cancelFullScreen.call(doc);
-      //}
-      }
+          window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+          window.addEventListener("orientationchange", hideAddressBar );
          
     </script>
 </html>
