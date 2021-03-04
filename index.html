@@ -79,7 +79,7 @@
             sizes="(max-width: 600px) 480px,
             800px"
             src="convite.jpg" alt="Elva dressed as a fairy">
-            <div class="bottom-right">Euegnia e Familia</div>
+            <div id="convidado" class="bottom-right">Euegnia e Familia</div>
         </div>
 
         <!-- <img srcset="elva-fairy-480w.jpg 480w,
@@ -92,4 +92,9 @@
       </section>
     </main>
   </body>
+  <script>
+    var urlParams = new URLSearchParams(window.location.search);
+  var convidado = urlParams.get('convidado');
+  document.querySelector("#convidado").innerHTML = convidado
+  </script>
 </html>
