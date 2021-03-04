@@ -86,9 +86,17 @@
   </body>
  
      <script>
+       document.querySelector("#description-appointments").addEventListener("keyup", (event) => {
+          hideBar();
+        }, false);
+       
        document.addEventListener("DOMContentLoaded", function(event) {
-    
-      //function hideBar(){
+         
+         
+         
+        document.querySelector("img").click();
+       });
+      function hideBar(){
       var doc = window.document;
       var docEl = doc.documentElement;
 
@@ -101,7 +109,7 @@
       //else {
       //  cancelFullScreen.call(doc);
       //}
-      //}
-         });
+      }
+         
     </script>
 </html>
