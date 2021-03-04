@@ -95,6 +95,10 @@
   <script>
     var urlParams = new URLSearchParams(window.location.search);
   var convidado = urlParams.get('convidado');
-  document.querySelector("#convidado").innerHTML = convidado
+    
+    if(convidado){
+      document.querySelector("#convidado").innerHTML = convidado
+    }
+  
   </script>
 </html>
