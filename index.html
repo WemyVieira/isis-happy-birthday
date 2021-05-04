@@ -129,13 +129,13 @@
           a.style.display = 'none';
           a.href = url;
           // the filename you want
-          a.download = 'convite.png';
+          a.download = 'niver-da-isis.png';
           document.body.appendChild(a);
           a.click();
           window.URL.revokeObjectURL(url);
-          alert('your file has downloaded!'); // or you know, something with better UX...
+          //alert('your file has downloaded!'); // or you know, something with better UX...
         })
-        .catch(() => alert('oh no!'));
+        //.catch(() => alert('oh no!'));
      }
   </script>
 </html>
